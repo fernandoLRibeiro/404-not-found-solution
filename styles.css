@@ -1,0 +1,104 @@
+:root {
+  --font-primary: "Space Mono", monospace;
+  --font-secondary: "Inconsolata", monospace;
+  --font-footer: "Montserrat", sans-serif;
+  --grey-1: #333333;
+  --grey-2: #4f4f4f;
+  --grey-3: #bdbdbd;
+
+  --text-lg: 4rem;
+  --text-lg-mobile: 3rem;
+  --text-md: 1.5rem;
+  --text-md-mobile: 1.125rem;
+  --text-sm: 0.875rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  color: var(--grey-1);
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.page-header {
+  width: 100%;
+  padding: 24px 77px;
+}
+
+.page-heading-text {
+  font-family: var(--font-secondary);
+  font-size: var(--text-md);
+  color: var(--grey-1);
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.main-image {
+  width: 75%;
+}
+
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-heading {
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.p-container {
+  width: 58%;
+}
+
+.main-text {
+  font-size: var(--text-md);
+  line-height: 35.54px;
+  margin: 2.25rem 0;
+}
+
+.main-button {
+  background-color: var(--grey-1);
+  color: white;
+  width: 216px;
+  height: 68px;
+  font-size: var(--text-sm);
+  outline: 0;
+  border: 0;
+  margin: 28px 0;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--text-md) 0;
+}
+
+.footer-text {
+  font-family: var(--font-footer);
+  font-size: var(--text-sm);
+  color: var(--grey-3);
+  margin: 0;
+}
